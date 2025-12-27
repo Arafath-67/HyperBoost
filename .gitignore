@@ -1,0 +1,16 @@
+# Dependencies (সব ফোল্ডারের জন্য কাজ করবে)
+node_modules/
+package-lock.json
+
+# Environment Variables (সিকিউরিটির জন্য)
+.env
+.env.local
+
+# Frontend Build Files
+.next/
+build/
+dist/
+
+# System Files
+.DS_Store
+.vscode/

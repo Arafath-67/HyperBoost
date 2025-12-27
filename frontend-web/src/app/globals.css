@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ... আপনার আগের সব কোড ... */
+
+/* 🔥 FIX: ডিফল্ট ব্রাউজার আইকন রিমুভ করা */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+/* Chrome/Edge এর অটোফিল ব্যাকগ্রাউন্ড ফিক্স (অপশনাল) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #f8fafc inset !important; /* ইনপুট কালারের সাথে মিলিয়ে দিন */
+    -webkit-text-fill-color: #0f172a !important;
+}
